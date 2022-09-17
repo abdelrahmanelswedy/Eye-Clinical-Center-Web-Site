@@ -1,0 +1,244 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Spinner */
+.spinner {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-right: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.spinner div {
+  width: 6%;
+  height: 16%;
+  background: #198754;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 400px;
+
+  opacity: 0;
+  -webkit-border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-animation: fade 1s linear infinite;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+.spinner div.bar1 {
+  -webkit-transform: rotate(0deg) translate(0, -130%);
+  -webkit-animation-delay: 0s;
+}
+
+.spinner div.bar2 {
+  -webkit-transform: rotate(30deg) translate(0, -130%);
+  -webkit-animation-delay: -0.9167s;
+}
+
+.spinner div.bar3 {
+  -webkit-transform: rotate(60deg) translate(0, -130%);
+  -webkit-animation-delay: -0.833s;
+}
+.spinner div.bar4 {
+  -webkit-transform: rotate(90deg) translate(0, -130%);
+  -webkit-animation-delay: -0.7497s;
+}
+.spinner div.bar5 {
+  -webkit-transform: rotate(120deg) translate(0, -130%);
+  -webkit-animation-delay: -0.667s;
+}
+.spinner div.bar6 {
+  -webkit-transform: rotate(150deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5837s;
+}
+.spinner div.bar7 {
+  -webkit-transform: rotate(180deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5s;
+}
+.spinner div.bar8 {
+  -webkit-transform: rotate(210deg) translate(0, -130%);
+  -webkit-animation-delay: -0.4167s;
+}
+.spinner div.bar9 {
+  -webkit-transform: rotate(240deg) translate(0, -130%);
+  -webkit-animation-delay: -0.333s;
+}
+.spinner div.bar10 {
+  -webkit-transform: rotate(270deg) translate(0, -130%);
+  -webkit-animation-delay: -0.2497s;
+}
+.spinner div.bar11 {
+  -webkit-transform: rotate(300deg) translate(0, -130%);
+  -webkit-animation-delay: -0.167s;
+}
+.spinner div.bar12 {
+  -webkit-transform: rotate(330deg) translate(0, -130%);
+  -webkit-animation-delay: -0.0833s;
+}
+/* End Spinner */
+
+/* Start Navbar */
+.navbar {
+  height: 100px;
+}
+.logo {
+  overflow: hidden;
+}
+.logo img {
+  width: 140px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #198754;
+}
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #198754;
+}
+.dropdown-item {
+  padding: 10px;
+}
+/* End Navbar */
+
+/* Start Header */
+header {
+  background: url(../images/cover3.jpg) center/cover no-repeat;
+  height: 90vh;
+  padding-top: 0;
+}
+/* End Header */
+
+/* Start Section-1 */
+.section-1 {
+  min-height: 500px;
+}
+.card {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  -webkit-transition: top ease 0.5s;
+  -moz-transition: top ease 0.5s;
+  -ms-transition: top ease 0.5s;
+  -o-transition: top ease 0.5s;
+}
+.card:hover {
+  top: -15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* End Section-1 */
+
+/* Start Section-2 */
+.section-2 {
+  min-height: 700px;
+  background: linear-gradient(180deg, #eee 0%, rgba(255, 255, 255, 1) 100%);
+}
+/* End Section-2 */
+
+/* Start Section-3 */
+.section-3 {
+  min-height: 900px;
+}
+/* End Section-3 */
+
+/* Start Section-4 */
+.section-4 {
+  min-height: 1000px;
+  background: linear-gradient(180deg, #eee 0%, rgba(255, 255, 255, 1) 100%);
+}
+/* End Section-4 */
+
+/* Start Section-5 */
+.section-5 {
+  min-height: 250px;
+}
+/* End Section-5 */
+
+/* Start Section-6 */
+.section-6 {
+  min-height: 500px;
+  background: linear-gradient(180deg, #eee 0%, rgba(255, 255, 255, 1) 100%);
+}
+/* End Section-6 */
+
+/* Start footer */
+footer {
+  min-height: 400px;
+}
+.columns-2 ul li a,
+.columns-3 ul li a,
+.columns-4 ul li a,
+.columns-5 i {
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.columns-2 ul li a:hover,
+.columns-3 ul li a:hover,
+.columns-4 ul li a:hover,
+.columns-5 i {
+  color: #198754;
+}
+/* End footer */
+
+/*Start Top margin of the anchor sections */
+#lasik,
+#cataract,
+#premiumiols,
+#cornealtransplantation,
+#pediatric,
+#oculoplastic {
+  scroll-margin-top: 150px;
+}
+/*End Top margin of the anchor sections */
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+    min-height: 250px;
+    padding-left: 10px;
+    border: 2px solid #eee;
+    border-radius: 2% 2% 2% 2%;
+    -webkit-border-radius: 2% 2% 2% 2%;
+    -moz-border-radius: 2% 2% 2% 2%;
+    -ms-border-radius: 2% 2% 2% 2%;
+    -o-border-radius: 2% 2% 2% 2%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
